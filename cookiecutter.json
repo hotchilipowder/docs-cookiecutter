@@ -1,7 +1,8 @@
 {
     "project_name": "xxx",
-    "docs_name": "dev_docs",
-    "author_name": "Your name (or your organization/company/team)",
+    "project_name_hints": "Project Name (default: current dirname)",
+    "docs_name": "docs",
+    "author_name": "hotchilipowder",
     "description": "A short description of the project.",
     "_copy_without_render": [
         "github_actions/*"
