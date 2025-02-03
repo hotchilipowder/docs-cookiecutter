@@ -1,0 +1,9 @@
+{
+    "project_name": "xxx",
+    "docs_name": "dev_docs",
+    "author_name": "Your name (or your organization/company/team)",
+    "description": "A short description of the project.",
+    "_copy_without_render": [
+        "github_actions/*"
+    ]
+}
