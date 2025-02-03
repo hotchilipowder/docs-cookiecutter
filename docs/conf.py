@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'docs-cookiecutter'
+project = 'xxx'
 copyright = '2025, hotchilipowder'
 author = 'hotchilipowder'
 release = '0.0.1'
@@ -22,7 +22,7 @@ extensions = [
   "sphinx.ext.todo",
   "sphinx.ext.viewcode",
   "sphinx_design",
-  "sphinx_comments"
+  "sphinx_comments",
   "sphinx_copybutton",
   "sphinxcontrib.bibtex",
   "sphinxcontrib.mermaid",

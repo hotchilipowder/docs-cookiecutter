@@ -4,7 +4,5 @@
     "docs_name": "docs",
     "author_name": "hotchilipowder",
     "description": "A short description of the project.",
-    "_copy_without_render": [
-        "github_actions/*"
-    ]
+    "include_github_actions": "yes"  
 }
