@@ -1,5 +1,7 @@
 # Development docs for {{ cookiecutter.docs_name }}
 
+This link can be found [ {{ cookiecutter.author_name }}.github.io/{{ cookiecutter.project_name }} ](https://{{ cookiecutter.author_name }}.github.io/{{ cookiecutter.project_name }}/)
+
 ## How to contribute
 
 ## Development
@@ -18,8 +20,6 @@ pip install -r requirements-dev.txt
 ```bash
 bash run_dev.sh
 ```
-
-Open [http://localhost:11111/drafts/xxx.html](http://localhost:11111/drafts/xxx.html), you will have your writing
 
 
 

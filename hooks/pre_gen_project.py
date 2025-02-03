@@ -21,6 +21,5 @@ print(f"当前文件夹名称: {current_folder}")
 print(f"生成的 project_name: {project_name}")
 
 # 修改 cookiecutter 上下文
-cookiecutter_context = globals().get('cookiecutter', {})
-cookiecutter_context['project_name'] = project_name
+cookiecutter['project_name'] = project_name
 
