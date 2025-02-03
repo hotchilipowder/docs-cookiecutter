@@ -22,3 +22,8 @@ Just goto **settings** -> **Pages** --> **Branch**, choose gh-pages
 
 Just goto **Settings** -> **Actions** --> **General**, **Workflow permissions**
 
+#### Branch "main" is not allowed to deploy to github-pages due to environment protection rules.
+
+Go to settings/environments to change the rules.
+
+

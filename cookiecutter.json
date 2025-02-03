@@ -1,8 +1,10 @@
 {
-    "project_name": "xxx",
-    "project_name_hints": "Project Name (default: current dirname)",
+    "project_name": "default_xxxx",
     "docs_name": "docs",
     "author_name": "hotchilipowder",
-    "description": "A short description of the project.",
-    "include_github_actions": "yes"  
+    "description": "A short description of the default_xxxx project.",
+    "include_github_actions": "yes",
+    "_copy_without_render": [
+        "github_actions/*"
+    ]
 }
