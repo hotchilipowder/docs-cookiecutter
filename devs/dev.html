@@ -2,7 +2,7 @@
 <html lang="zh" data-accent-color="violet" data-content_root="../">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>2025-02-03 - xxx 0.0.1 文档</title><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="prev" title="DevLogs" href="../index.html" /><script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>2025-02-03 - docs-cookiecutter 0.0.1 文档</title><link rel="index" title="索引" href="../genindex.html" /><link rel="search" title="搜索" href="../search.html" /><link rel="prev" title="DevLogs" href="../index.html" /><script>
     function setColorMode(t){let e=document.documentElement;e.setAttribute("data-color-mode",t);let a=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,s=t;"auto"===t&&(s=a?"dark":"light"),"light"===s?(e.classList.remove("dark"),e.classList.add("light")):(e.classList.remove("light"),e.classList.add("dark"))}
     setColorMode(localStorage._theme||"auto");
   </script><link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=397bb51e" />
@@ -29,7 +29,7 @@
     <a class="sy-head-brand" href="../index.html">
       
       
-      <strong>xxx</strong>
+      <strong>docs-cookiecutter</strong>
     </a>
     <div class="sy-head-nav" id="HeadNav">
       <nav class="sy-head-links"></nav>
@@ -73,7 +73,10 @@ data-aria-dark="切换到自动模式">
     </button>
     <div class="sy-scrollbar sy-rside-inner px-6 xl:top-16 xl:sticky xl:pl-0 pt-6 pb-4"><div class="localtoc"><h3>该页内容</h3><ul>
 <li><a class="reference internal" href="#done">Done</a></li>
-<li><a class="reference internal" href="#todo">TODO</a></li>
+<li><a class="reference internal" href="#todo">TODO</a><ul>
+<li><a class="reference internal" href="#findings">Findings</a></li>
+</ul>
+</li>
 </ul>
 </div><div id="ethical-ad-placement" data-ea-publisher="readthedocs"></div></div>
   </aside>
@@ -86,7 +89,7 @@ data-aria-dark="切换到自动模式">
       </button>
     </div>
     <ol class="flex-1" itemscope itemtype="https://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-        <a itemprop="item" href="../index.html"><span itemprop="name">xxx</span></a>
+        <a itemprop="item" href="../index.html"><span itemprop="name">docs-cookiecutter</span></a>
         <span>/</span>
         <meta itemprop="position" content="1" />
       </li><li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -116,6 +119,23 @@ data-aria-dark="切换到自动模式">
 </section>
 <section id="todo">
 <h2>TODO<a class="headerlink" href="#todo" title="Link to this heading">¶</a></h2>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Bug for project name</p></li>
+</ul>
+<section id="findings">
+<h3>Findings<a class="headerlink" href="#findings" title="Link to this heading">¶</a></h3>
+<p><a class="reference external" href="https://cookiecutter.readthedocs.io/en/stable/advanced/hooks.html">https://cookiecutter.readthedocs.io/en/stable/advanced/hooks.html</a></p>
+<p>hooks中, <code class="docutils literal notranslate"><span class="pre">pre_prompt</span></code>
+使用</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span data-line="1"><span class="n">current_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
+</span><span data-line="2">
+</span></pre></div>
+</div>
+<p>得到的是模板仓库的目录名，而不是你启动 cookiecutter 时所在的目录名或者最终生成项目的文件夹名。</p>
+<p>如果确实需要，需要在调用时传入，太麻烦了… (这个没有办法，因为调用pre_prompt 或者 pre_gen都是在临时目录中）</p>
+<p>唯一的办法可能只有在完成渲染后。</p>
+<p>完成了一个渲染后的，只要你用默认的 <code class="docutils literal notranslate"><span class="pre">default_xxxx</span></code>, 就进行查找替换…</p>
+</section>
 </section>
 </section>
 
