@@ -22,7 +22,7 @@ extensions = [
   "sphinx.ext.todo",
   "sphinx.ext.viewcode",
   "sphinx_design",
-  "sphinx_comments"
+  "sphinx_comments",
   "sphinx_copybutton",
   "sphinxcontrib.bibtex",
   "sphinxcontrib.mermaid",
