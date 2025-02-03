@@ -1,5 +1,7 @@
 # Development docs for docs
 
+This link can be found [ hotchilipowder.github.io/docs-cookiecutter ](https://hotchilipowder.github.io/docs-cookiecutter/)
+
 ## How to contribute
 
 ## Development
@@ -19,10 +21,5 @@ pip install -r requirements-dev.txt
 bash run_dev.sh
 ```
 
-Open [http://localhost:11111/drafts/xxx.html](http://localhost:11111/drafts/xxx.html), you will have your writing
 
-
-### Open Github Pages
-
-Just goto **settings** -> **Pages** --> **Branch**, choose gh-pages
 
