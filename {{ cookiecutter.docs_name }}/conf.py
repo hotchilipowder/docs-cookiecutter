@@ -29,6 +29,12 @@ extensions = [
   "sphinxemoji.sphinxemoji",
 ]
 
+html_context = {
+    "source_type": "github",
+    "source_user": "{{ cookiecutter.author_name }}",
+    "source_repo": "{{ cookiecutter.project_name }}",
+}
+
 html_css_files = [
  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 ]
