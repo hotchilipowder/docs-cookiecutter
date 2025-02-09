@@ -1,6 +1,12 @@
 # docs-cookiecutter
 Fast sphinx doc with markdown support 
 
+```
+cookie https://github.com/hotchilipowder/docs-cookiecutter.git
+
+```
+
+
 
 
 ## About docs pages
