@@ -1,35 +1,29 @@
 # docs-cookiecutter
-Fast sphinx doc with markdown support 
+Fast Sphinx docs template with Markdown support.
 
+## Create a project
+
+```bash
+uvx cookiecutter https://github.com/hotchilipowder/docs-cookiecutter.git
 ```
-cookie https://github.com/hotchilipowder/docs-cookiecutter.git
 
+## Local development (template repo)
+
+```bash
+cd docs
+uv sync
+uv run sphinx-build -b html . _build
 ```
 
+## Smoke test this template
 
+```bash
+bash scripts/smoke_test_template.sh
+```
 
+## GitHub Pages notes
 
-## About docs pages
-
-
-## Links
-
-After 
-
-
-
-### Chores
-
-#### Open Github Pages
-
-Just goto **settings** -> **Pages** --> **Branch**, choose gh-pages
-
-#### Permission to xxx/xxxx.git denied to github-actions[bot]
-
-Just goto **Settings** -> **Actions** --> **General**, **Workflow permissions**
-
-#### Branch "main" is not allowed to deploy to github-pages due to environment protection rules.
-
-Go to settings/environments to change the rules.
-
+1. Open `Settings -> Pages` and select `gh-pages`.
+2. If you see `Permission to xxx/xxxx.git denied to github-actions[bot]`, set `Settings -> Actions -> General -> Workflow permissions`.
+3. If `main` cannot deploy because of environment protection rules, update `Settings -> Environments`.
 

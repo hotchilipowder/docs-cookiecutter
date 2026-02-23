@@ -14,11 +14,14 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v6
+
       - name: Install 
         shell: bash
         run: |
-          pip install -r docs/requirements.txt
-          sphinx-build -b html docs build
+          uv sync --directory docs
+          uv run --directory docs sphinx-build -b html . ../build
 
       - name: Deploy Website
         uses: peaceiris/actions-gh-pages@v3

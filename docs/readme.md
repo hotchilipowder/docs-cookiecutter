@@ -9,10 +9,8 @@ This link can be found [ hotchilipowder.github.io/docs-cookiecutter ](https://ho
 
 ### Install
 
-```python
-virtualenv venv
-source venv/bin/activate
-pip install -r requirements-dev.txt
+```bash
+uv sync
 ```
 
 ### Develop in localhost
@@ -21,5 +19,10 @@ pip install -r requirements-dev.txt
 bash run_dev.sh
 ```
 
+### Build once
+
+```bash
+uv run sphinx-build -b html . _build
+```
 
 

@@ -1,0 +1,21 @@
+[project]
+name = "{{ cookiecutter.project_name }}-{{ cookiecutter.docs_name }}"
+version = "0.0.1"
+description = "Documentation site for {{ cookiecutter.project_name }}"
+requires-python = ">=3.11"
+dependencies = [
+  "aiohttp",
+  "myst-parser[linkify]",
+  "shibuya",
+  "sphinx",
+  "sphinx-comments",
+  "sphinx-copybutton",
+  "sphinx-design",
+  "sphinx-autobuild",
+  "sphinxcontrib-bibtex",
+  "sphinxcontrib-mermaid",
+  "sphinxemoji",
+]
+
+[tool.uv]
+package = false

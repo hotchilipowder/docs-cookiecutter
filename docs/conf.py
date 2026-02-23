@@ -63,7 +63,7 @@ comments_config = {
 
 
 templates_path = ['_templates']
-exclude_patterns = ['build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['build', '_build', '.venv', 'Thumbs.db', '.DS_Store']
 
 language = 'zh'
 
@@ -72,5 +72,4 @@ language = 'zh'
 
 html_theme = 'shibuya'
 html_static_path = ['_static']
-
 
