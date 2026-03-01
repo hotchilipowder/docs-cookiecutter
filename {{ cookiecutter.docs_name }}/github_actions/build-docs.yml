@@ -20,8 +20,13 @@ jobs:
       - name: Install 
         shell: bash
         run: |
+<<<<<<< HEAD
           uv sync --directory docs
           uv run --directory docs sphinx-build -b html . ../build
+=======
+          pip install -r {{ cookiecutter.docs_name }}/requirements.txt
+          sphinx-build -b html {{ cookiecutter.docs_name }} build
+>>>>>>> b967561 (updated)
 
       - name: Deploy Website
         uses: peaceiris/actions-gh-pages@v3
