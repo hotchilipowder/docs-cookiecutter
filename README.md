@@ -53,6 +53,7 @@ You will be prompted for:
 ```
 <project>
   <docs_name>/
+    AGENTS.md
     conf.py
     index.rst
     readme.md
@@ -60,6 +61,12 @@ You will be prompted for:
     run_dev.sh
     github_actions/ (optional)
 ```
+
+## Agent-friendly workflow
+- Repository-level behavior for agents is defined in `AGENTS.md` (template purpose and boundaries).
+- Generated docs include `<docs_name>/AGENTS.md` for coding agents.
+- Ask the agent to follow that file first, then execute install/build commands from `<docs_name>/readme.md`.
+- Keep project-specific policies in your repository root `AGENTS.md`; keep docs execution details in `<docs_name>/AGENTS.md`.
 
 ## GitHub Pages deployment
 If you enabled `include_github_actions`, a workflow is created under `<docs_name>/github_actions/build-docs.yml`.
@@ -71,5 +78,3 @@ Common fixes:
 
 ## Notes
 - The workflow uses `<docs_name>` for the docs path. If you change `docs_name`, it will stay consistent.
->>>>>>> b967561 (updated)
-

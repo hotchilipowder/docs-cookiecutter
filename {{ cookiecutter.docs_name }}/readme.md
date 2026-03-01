@@ -4,7 +4,6 @@
 
 Live site (if enabled): https://{{ cookiecutter.author_name }}.github.io/{{ cookiecutter.project_name }}/
 
-<<<<<<< HEAD
 
 ## Development
 
@@ -13,20 +12,6 @@ Live site (if enabled): https://{{ cookiecutter.author_name }}.github.io/{{ cook
 
 ```bash
 uv sync
-=======
-## Contents
-- `index.rst`: entry page
-- `conf.py`: Sphinx config
-- `_static/`, `_templates/`: assets and overrides
-- `refs.bib`: bibliography (if used)
-
-## Quick start
-```bash
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-pip install -r requirements-dev.txt
->>>>>>> b967561 (updated)
 ```
 
 ### Local preview
@@ -34,16 +19,10 @@ pip install -r requirements-dev.txt
 bash run_dev.sh
 ```
 
-<<<<<<< HEAD
 ### Build once
 
 ```bash
 uv run sphinx-build -b html . _build
-=======
-### Build HTML
-```bash
-sphinx-build -b html . _build/html
->>>>>>> b967561 (updated)
 ```
 
 ## Writing docs
@@ -59,4 +38,3 @@ sphinx-build -b html . _build/html
 
 ## Troubleshooting
 - If Pages doesn’t deploy, check workflow permissions and environment rules
-
